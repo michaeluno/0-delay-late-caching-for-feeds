@@ -1,7 +1,7 @@
 <?php
 /**
  *	Plugin Name:    0 Delay Late Caching for Feeds
- *	Plugin URI:     http://en.michaeluno.jp/late-caching-for-feeds
+ *	Plugin URI:     https://github.com/michaeluno/0-delay-late-caching-for-feeds
  *	Description:    Implements a late caching mechanism for the built-in WordPress RSS parser.
  *	Author:         Michael Uno (miunosoft)
  *	Author URI:     http://michaeluno.jp
