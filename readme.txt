@@ -53,8 +53,6 @@ For the first time of loading, it fetches the contents normally and return them 
 
 == Other Notes ==
 
-= Reserved =
-
 = 1.0.1 - 2018/10/30 =
 - Fixed redundant function calls.
 
