@@ -1,6 +1,6 @@
 <?php
 /**
- * 0 Delay Late Caching for Feeds
+ * Late Caching for Feeds
  *
  * [PROGRAM_URI]
  * Copyright (c) 2018 Michael Uno

@@ -55,5 +55,5 @@ For the first time of loading, it fetches the contents normally and rerun them a
 
 = Reserved =
 
-= 1.0.0 =
+= 1.0.0 - 2018/10/30 =
 - Released initially.

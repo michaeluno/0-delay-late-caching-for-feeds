@@ -1,6 +1,6 @@
 <?php
 /**
- *	Plugin Name:    0 Delay Late Caching for Feeds
+ *	Plugin Name:    Late Caching for Feeds
  *	Plugin URI:     https://github.com/michaeluno/0-delay-late-caching-for-feeds
  *	Description:    Implements a late caching mechanism for the built-in WordPress RSS parser.
  *	Author:         Michael Uno (miunosoft)
@@ -15,7 +15,7 @@
 class LateCachingForFeeds_Registry_Base {
  
 	const VERSION        = '1.0.0';    // <--- DON'T FORGET TO CHANGE THIS AS WELL!!
-	const NAME           = '0 Delay Late Caching for Feeds';
+	const NAME           = 'Late Caching for Feeds';
 	const DESCRIPTION    = 'Implements a late caching mechanism for the built-in WordPress RSS parser.';
 	const URI            = 'http://en.michaeluno.jp/';
 	const AUTHOR         = 'miunosoft (Michael Uno)';
@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * 
  * To use the class, first call the setUp() method, which sets up the necessary properties.
  * 
- * @package     0 Delay Late Caching for Feeds
+ * @package     Late Caching for Feeds
  * @copyright   Copyright (c) 2018, Michael Uno
  * @authorurl	http://michaeluno.jp
  * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
