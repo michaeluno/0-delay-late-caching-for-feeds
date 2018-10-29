@@ -5,7 +5,7 @@
  *	Description:    Implements a late caching mechanism for the built-in WordPress RSS parser.
  *	Author:         Michael Uno (miunosoft)
  *	Author URI:     http://michaeluno.jp
- *	Version:        1.0.0
+ *	Version:        1.0.1
  */
 
 /**
@@ -14,7 +14,7 @@
  */
 class LateCachingForFeeds_Registry_Base {
  
-	const VERSION        = '1.0.0';    // <--- DON'T FORGET TO CHANGE THIS AS WELL!!
+	const VERSION        = '1.0.1';    // <--- DON'T FORGET TO CHANGE THIS AS WELL!!
 	const NAME           = 'Late Caching for Feeds';
 	const DESCRIPTION    = 'Implements a late caching mechanism for the built-in WordPress RSS parser.';
 	const URI            = 'http://en.michaeluno.jp/';

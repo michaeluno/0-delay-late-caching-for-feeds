@@ -5,7 +5,7 @@ Tags:               feeds, feed, rss, rss2, atom, caching, caches, cache, late c
 Requires at least:  3.5
 Requires PHP:       5.2.4
 Tested up to:       4.9.8
-Stable tag:         1.0.0
+Stable tag:         1.0.1
 License:            GPLv2 or later
 License URI:        http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -55,5 +55,8 @@ For the first time of loading, it fetches the contents normally and rerun them a
 
 = Reserved =
 
-= 1.0.0 - 2018/10/30 =
+= 1.0.1 - 2018/10/30 =
+- Fixed redundant function calls.
+
+= 1.0.0 - 2018/10/29 =
 - Released initially.
