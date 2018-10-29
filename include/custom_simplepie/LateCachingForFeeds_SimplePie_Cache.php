@@ -17,6 +17,8 @@ class LateCachingForFeeds_SimplePie_Cache extends SimplePie_Cache {
     /**
      * Create a new SimplePie_Cache object
      *
+     * For `wp-cron.php`, which loads in the background, no need to set it.
+     *
      * @static
      * @access public
      */

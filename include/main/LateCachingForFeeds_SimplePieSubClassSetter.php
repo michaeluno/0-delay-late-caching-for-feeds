@@ -25,7 +25,7 @@ class LateCachingForFeeds_SimplePieSubClassSetter {
 
     /**
      * Sets a custom cache class.
-     * For `wp-cron.php`, which loads in the background, no need to set it.
+     *
      * @param  $oFeed    SimplePie
      * @return void
      */
