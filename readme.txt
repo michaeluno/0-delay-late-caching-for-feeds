@@ -1,7 +1,7 @@
 === 0 Delay Late Caching for Feeds ===
 Contributors:       Michael Uno, miunosoft
 Donate link:        http://en.michaeluno.jp/donate
-Tags:               feeds, feed, rss, caching, caches, cache, late cache, late caching, speed, page load,
+Tags:               feeds, feed, rss, rss2, atom, caching, caches, cache, late cache, late caching, speed, page load,
 Requires at least:  3.5
 Requires PHP:       5.2.4
 Tested up to:       4.9.8
@@ -15,13 +15,13 @@ Implements a late caching mechanism for the built-in WordPress RSS parser.
 
 = What is Late Caching? = 
 
-Have you ever felt that a page that has RSS feeds loads relatively slow when it renews their caches?
+Have you ever felt that a page having RSS feeds loads relatively slow when it renews their caches?
 
-The current implementation of the WordPress built-in feed caching mechanism renews the cache during the page load when it is expired. When this happens, it takes some time to load while accessing the external feed source. This is noticeable for site visitors in most cases and they may leave the site unless they are patient enough.
+The current implementation of the WordPress built-in feed caching mechanism renews the cache during the page load when it is expired. When this happens, it takes some time to load while the server accesses the external feed source. This is noticeable for site visitors in most cases and they may leave the site unless they are patient enough.
 
 What this plugin does is to put off the refresh process and to make it done later in the background process.
 
-Immediate Caching (Built-in Default Mechanism):
+Immediate Caching (WordPress Built-in Default Mechanism):
 
  1. A page loads and detects a feed is expired.
  2. Fetches new contents of the feed.
@@ -34,8 +34,7 @@ Late Caching:
  1. A page loads and detects a feed is expired.
  2. Schedules a cache renewal event in the background.
  3. Displays the expired contents.
- 4. The cache gets renewed and they are displayed in the next page load.
-
+ 4. The cache gets renewed in the background and the updated contents are displayed in the next page load.
 
 == Installation ==
 
