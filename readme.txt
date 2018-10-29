@@ -1,4 +1,4 @@
-=== 0 Delay Late Caching for Feeds ===
+=== Late Caching for Feeds ===
 Contributors:       Michael Uno, miunosoft
 Donate link:        http://en.michaeluno.jp/donate
 Tags:               feeds, feed, rss, rss2, atom, caching, caches, cache, late cache, late caching, speed, page load,
