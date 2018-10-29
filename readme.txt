@@ -49,7 +49,7 @@ Late Caching:
 
 = What happens when a feed is loaded for the first time? =
 
-For the first time of loading, it fetches the contents normally and rerun them after that. 
+For the first time of loading, it fetches the contents normally and return them after that.
 
 == Other Notes ==
 
