@@ -1,7 +1,7 @@
 === Late Caching for Feeds ===
 Contributors:       Michael Uno, miunosoft
 Donate link:        http://en.michaeluno.jp/donate
-Tags:               feeds, feed, rss, rss2, atom, caching, caches, cache, late cache, late caching, speed, page load,
+Tags:               caches, caching, late caching, speed, feeds, feed, rss, rss2, atom, cache, late cache, page load,
 Requires at least:  3.5
 Requires PHP:       5.2.4
 Tested up to:       4.9.8
