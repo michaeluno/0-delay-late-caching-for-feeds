@@ -10,7 +10,7 @@
 /**
  * Sets a custom sub-class for feed caches.
  */
-class LateCachingForFeeds_SimplePieSubClassSetter {
+class LateCachingForFeeds_SimplePieSubClassSetter extends LateCachingForFeeds_Utility {
 
     private $___aCacheNameMap = array(
         // 'cache name' => 'https:// ... ', url
@@ -26,10 +26,11 @@ class LateCachingForFeeds_SimplePieSubClassSetter {
     /**
      * Sets a custom cache class.
      *
-     * @param  $oFeed    SimplePie
+     * @param   SimplePie       $oFeed
+     * @param   string|array    $asURL      URL(s)
      * @return void
      */
-    public function replyToSetCustomSubclasses( $oFeed, $sURL ) {
+    public function replyToSetCustomSubclasses( $oFeed, $asURL ) {
 
         if ( ! $oFeed instanceof SimplePie ) {
             return;
@@ -38,8 +39,14 @@ class LateCachingForFeeds_SimplePieSubClassSetter {
         $oFeed->set_cache_class( 'LateCachingForFeeds_SimplePie_Cache' );
 
         // Store the url in a cache name map so that the cache object later can refer to it.
-        $_sCacheName = call_user_func( $oFeed->cache_name_function, $oFeed->feed_url );
-        $this->___aCacheNameMap[ $_sCacheName ] = $oFeed->feed_url;
+        // Consider that the set url may be multiple.
+        // If a single feed is set, it is stored in `$oFeed->feed_url`
+        // for multiple, `$oFeed->multifeed_url`.
+        foreach( $this->getAsArray( $asURL ) as $_sURL ) {
+            $_sURL = trim( $_sURL );
+            $_sCacheName = call_user_func( $oFeed->cache_name_function, $_sURL );
+            $this->___aCacheNameMap[ $_sCacheName ] = $_sURL;
+        }
 
     }
 

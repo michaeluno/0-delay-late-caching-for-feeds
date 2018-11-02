@@ -5,7 +5,7 @@
  *	Description:    Implements a late caching mechanism for the built-in WordPress RSS parser.
  *	Author:         Michael Uno (miunosoft)
  *	Author URI:     http://michaeluno.jp
- *	Version:        1.0.1
+ *	Version:        1.0.2
  */
 
 /**
@@ -14,7 +14,7 @@
  */
 class LateCachingForFeeds_Registry_Base {
  
-	const VERSION        = '1.0.1';    // <--- DON'T FORGET TO CHANGE THIS AS WELL!!
+	const VERSION        = '1.0.2';    // <--- DON'T FORGET TO CHANGE THIS AS WELL!!
 	const NAME           = 'Late Caching for Feeds';
 	const DESCRIPTION    = 'Implements a late caching mechanism for the built-in WordPress RSS parser.';
 	const URI            = 'http://en.michaeluno.jp/';
@@ -216,9 +216,12 @@ final class LateCachingForFeeds_Registry extends LateCachingForFeeds_Registry_Ba
 }
 LateCachingForFeeds_Registry::setUp();
 
+if ( defined( 'DOING_TESTS' ) && DOING_TESTS ) {
+    return;
+}
+
 include( LateCachingForFeeds_Registry::$sDirPath . '/include/LateCachingForFeeds_Bootstrap.php' );
 new LateCachingForFeeds_Bootstrap( LateCachingForFeeds_Registry::$sFilePath );
-
 
 /* For testing */
 //include( LateCachingForFeeds_Registry::$sDirPath . '/test/allow-sleep-query.php'  );

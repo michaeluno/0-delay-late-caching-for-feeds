@@ -5,7 +5,7 @@ Tags:               caches, caching, late caching, speed, feeds, feed, rss, rss2
 Requires at least:  3.5
 Requires PHP:       5.2.4
 Tested up to:       4.9.8
-Stable tag:         1.0.1
+Stable tag:         1.0.2
 License:            GPLv2 or later
 License URI:        http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,7 +21,7 @@ The current implementation of the WordPress built-in feed caching mechanism rene
 
 What this plugin does is to put off the refresh process and to make it done later in the background process.
 
-Immediate Caching (WordPress Built-in Default Mechanism):
+_Immediate Caching_ (WordPress Default Behavior):
 
  1. A page loads and detects a feed is expired.
  2. Fetches new contents of the feed.
@@ -29,7 +29,7 @@ Immediate Caching (WordPress Built-in Default Mechanism):
 
 The step 2 above takes time and noticeable to the viewer.
 
-Late Caching:
+_Late Caching_:
 
  1. A page loads and detects a feed is expired.
  2. Schedules a cache renewal event in the background.
@@ -52,6 +52,9 @@ Late Caching:
 For the first time of loading, it fetches the contents normally and return them after that.
 
 == Other Notes ==
+
+= 1.0.2 - 2018/11/02 =
+- Fixed a bug with multiple feed urls passed to `fetch_feed()`.
 
 = 1.0.1 - 2018/10/30 =
 - Fixed redundant function calls.
